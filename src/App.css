@@ -1,0 +1,58 @@
+div {
+  box-sizing: border-box;
+}
+.wrap {
+  width: 50px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.wrap > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.active {
+  border: 1px solid #333;
+  box-shadow: 0 0 10px;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+button {
+  display: block;
+  line-height: 1.5;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: all .3s;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+button:hover {
+  background-color: cyan;
+  color: #fff;
+}
+.text-wrap {
+  margin-top: 10px;
+}
+input {
+  outline: none;
+  display: inline-block;
+  padding: 0 5px;
+  margin-left: 5px;
+  width: 50px;
+}
