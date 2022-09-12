@@ -1,0 +1,22 @@
+
+.wrap h1 {
+  text-align: center;
+}
+.add {
+  width: 80%;
+  margin: 0 auto;
+}
+.add .add-input {
+  width: 100%;
+}
+.todos > .todo {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto;
+  height: 30px;
+  line-height: 30px;
+}
+.todo-is-completed {
+  margin: 0 8px;
+}
