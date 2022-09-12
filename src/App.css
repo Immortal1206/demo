@@ -66,3 +66,8 @@ input {
   width: 1000px;
   margin: 0 auto;
 }
+@media screen and (width < 1200px) {
+  .wrap {
+    width: 600px;
+  }
+}
