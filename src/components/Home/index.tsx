@@ -26,6 +26,9 @@ export default function Home() {
   const clickHandler = (e: ChangeEvent, id: string) => {
     dispatch(todoToggled(id))
   }
+  const deleteHandler = (id: string) => {
+    dispatch(todoDelete(id))
+  }
   return (
     <div className='wrap'>
       <h1>todos</h1>
@@ -50,7 +53,10 @@ export default function Home() {
                 />
                 {v.text}
               </div>
-              <button onClick={() => {navigate('/edit', { state: v.id })}}>edit</button>
+              <div className='delete'>
+                <button onClick={() => {navigate('/edit', { state: v.id })}}>edit</button>
+                <button onClick={() => deleteHandler(v.id)}>delete</button>
+              </div>
             </li>))
         }
       </ul>

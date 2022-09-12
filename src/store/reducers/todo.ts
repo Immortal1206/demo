@@ -31,9 +31,7 @@ const todosSlice = createSlice({
     },
     todoDelete(state, action: PayloadAction<string>) {
       const todoIndex = state.findIndex(todo => todo.id === action.payload)
-      if (todoIndex) {
-        state.splice(todoIndex, 1)
-      }
+      state.splice(todoIndex, 1)
     },
     todoEdit(state, action: PayloadAction<Omit<todo, 'completed'>>) {
       const todo = state.find(todo => todo.id === action.payload.id)

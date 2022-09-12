@@ -20,3 +20,9 @@
 .todo-is-completed {
   margin: 0 8px;
 }
+.delete {
+  display: flex;
+}
+.delete button {
+  margin: 0 5px;
+}
